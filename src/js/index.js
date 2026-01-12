@@ -16,6 +16,7 @@ document.querySelectorAll('.flatpickr').forEach((picker) => {
     wrap: true,
     dateFormat: "d.m.Y",
     locale: customEN,
+    disableMobile: true,
     prevArrow: '<img src="./src/img/calendar/arrow-left.svg" alt="arrow">',
     nextArrow: '<img src="./src/img/calendar/arrow-right.svg" alt="arrow">',
   });
