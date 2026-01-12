@@ -682,6 +682,7 @@ header .cont > div > div:nth-of-type(3) .flatpickr input {
 header .cont > div > div:nth-of-type(3) .flatpickr > a {
   cursor: pointer;
   padding: 6px 3px 4px 4px;
+  max-height: 28px;
   color: #5F5F5F;
   background-color: #EBEBEB;
   border: 1px solid #DEDEDE;

@@ -107,6 +107,7 @@ header {
             > a {
               cursor: pointer;
               padding: 6px 3px 4px 4px;
+              max-height: 28px;
               color: $input-btn-color;
               background-color: $input-btn-bg-color;
               border: 1px solid $input-bd-color;
