@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+.page-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: url(../img/main-bg.jpg) no-repeat;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.cont {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 var(--cont-pd);
+}
+
+.cont-sm {
+    max-width: 612px;
+    margin: 0 auto 0 24.49vw;
+    @media (max-width: 1439px) {
+        margin: 0 auto;
+    }
+}
+.cont-md {
+    max-width: 876px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $title;
+    margin: 0;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: $font;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-family: $font2;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+.btn {
+    font-family: $font2;
+    padding: 6px 12px 7px;
+    font-size: var(--btn-fz);
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    color: $accent;
+    background-color: $white;
+    border: 1px solid $accent;
+    border-radius: 2px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $title;
+        border: 1px solid $title;
+    }
+}
+
+li {
+    font-family: $font2;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: $list;
+}
+
+input {
+    max-width: 107px;
+    padding: 6px 8px 5px;
+    font-family: $font2;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: $title;
+    outline: none;
+    border: 1px solid $input-bd-color;
+    border-radius: 4px;
+
+    &::placeholder {
+        color: #636264;
+    }
+}
+
+/* Flatpickr styles*/
+
+.flatpickr-calendar {
+    border: 1px solid $datepicker-bd-color;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.flatpickr-calendar.arrowTop:before {
+    border-bottom-color: $datepicker-bd-color;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months,
+.flatpickr-current-month input.cur-year,
+.flatpickr-current-month span.cur-month {
+    font-family: $font2;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.flatpickr-months .flatpickr-prev-month, .flatpickr-months .flatpickr-next-month {
+    padding: 13px 15px;
+}
+
+.flatpickr-days {
+    width: 183px;
+}
+
+.flatpickr-days .flatpickr-day {
+    width: 23px;
+    max-width: 23px;
+    height: 23px;
+    line-height: 23px;
+}
+
+.flatpickr-current-month {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 0;
+    margin: -2px 0 0 3px;
+    height: 28px;
+}
+
+.flatpickr-calendar {
+    padding: 8px 9px;
+}
+
+.flatpickr-calendar,
+.flatpickr-weekdays {
+    width: 201px;
+}
+
+.dayContainer {
+    width: 183px;
+    min-width: 183px;
+    max-width: 183px;
+    gap: 2px;
+    row-gap: 2px;
+}
+
+.flatpickr-weekdays {
+    height: 15px;
+    max-width: 183px;
+}
+
+span.flatpickr-weekday {
+   font-family: $font2;
+   font-size: 13px;
+   font-weight: 700;
+   letter-spacing: 0;
+   color: $title;
+}
+
+.flatpickr-day {
+    font-family: $font2;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #333437;
+    border-radius: 2px;
+}
+
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay,
+.flatpickr-day.notAllowed,
+.flatpickr-day.notAllowed.prevMonthDay,
+.flatpickr-day.notAllowed.nextMonthDay {
+    color: #929292;
+}
+
+.flatpickr-day:hover,
+.flatpickr-day.today,
+.flatpickr-day.prevMonthDay:hover,
+.flatpickr-day.nextMonthDay:hover,
+.flatpickr-day.flatpickr-disabled:hover {
+    color: $white;
+    background-color: $accent;
+    border-color: $accent;
+    transition: 0.3s all ease;
+    border-radius: 2px;
+}
+
+.flatpickr-current-month span.cur-month {
+    margin: 0;
+}

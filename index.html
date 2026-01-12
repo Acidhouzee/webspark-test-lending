@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monblan Project</title>
+    <link rel="stylesheet" href="./src/icons/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="./src/scss/style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="cont cont-sm">
+                <img class="logo" src="./src/img/logo.png" srcset="./src/img/logo.png 1x, ./src/img/logo@2x.png 2x" alt="logo" width="138">
+                <div class="header-content">
+                    <div>
+                        <h1>monblanproject</h1>
+                        <button class="btn" type="button">Start on  17-02-2016</button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><span>870</span> posts</li>
+                            <li><span>11,787</span> followers</li>
+                            <li><span>112</span> following</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Date</h2>
+                        <div>
+                            <div class="flatpickr">
+                                <input type="text" placeholder="from" data-input>
+                                <a class="input-button" title="clear" data-clear>
+                                    <i class="icon-close"></i>
+                                </a>
+                                <a class="input-button" title="toggle" data-toggle>
+                                    <i class="icon-calendar"></i>
+                                </a>
+                            </div>
+                            <div class="flatpickr">
+                                <input type="text" placeholder="to" data-input>
+                                <a class="input-button" title="clear" data-clear>
+                                    <i class="icon-close"></i>
+                                </a>
+                                <a class="input-button" title="toggle" data-toggle>
+                                    <i class="icon-calendar"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="gallery">
+                <div class="cont cont-md">
+                    <div class="gallery-mode">
+                        <button class="mode-btn" data-type="mode-grid" type="button">
+                            <i class="icon-grid"></i>
+                        </button>
+                        <button class="mode-btn" data-type="mode-list" type="button">
+                            <i class="icon-list"></i>
+                        </button>
+                    </div>
+
+                    <div id="gallery-content" class="list">
+                        <ul class="gallery-list">
+                            <li class="gallery-item">
+                                <div class="item-img">
+                                    <img src="./src/img/gallery/1.jpg" srcset="./src/img/gallery/1.jpg 1x, ./src/img/gallery/1@2x.jpg 2x" alt="gallery-image">
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="item-today">
+                                        <h2>Today</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>128</p></div>
+                                            <div><i class="icon-comment"></i><p>31</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="item-date">
+                                        <h2>9-08-2016</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>67</p></div>
+                                            <div><i class="icon-comment"></i><p>22</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-upload">
+                                    <h2>Image upload</h2>
+                                    <p>11-04-2016</p>
+                                </div>
+                            </li>
+                            <li class="gallery-item">
+                                <div class="item-img">
+                                    <img src="./src/img/gallery/2.jpg" srcset="./src/img/gallery/2.jpg 1x, ./src/img/gallery/2@2x.jpg 2x" alt="gallery-image">
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="item-today">
+                                        <h2>Today</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>128</p></div>
+                                            <div><i class="icon-comment"></i><p>31</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="item-date">
+                                        <h2>9-08-2016</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>67</p></div>
+                                            <div><i class="icon-comment"></i><p>22</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-upload">
+                                    <h2>Image upload</h2>
+                                    <p>11-04-2016</p>
+                                </div>
+                            </li>
+                            <li class="gallery-item">
+                                <div class="item-img">
+                                    <img src="./src/img/gallery/3.jpg" srcset="./src/img/gallery/3.jpg 1x, ./src/img/gallery/3@2x.jpg 2x" alt="gallery-image">
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="item-today">
+                                        <h2>Today</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>128</p></div>
+                                            <div><i class="icon-comment"></i><p>31</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="item-date">
+                                        <h2>9-08-2016</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>67</p></div>
+                                            <div><i class="icon-comment"></i><p>22</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-upload">
+                                    <h2>Image upload</h2>
+                                    <p>11-04-2016</p>
+                                </div>
+                            </li>
+                            <li class="gallery-item">
+                                <div class="item-img">
+                                    <img src="./src/img/gallery/4.jpg" srcset="./src/img/gallery/4.jpg 1x, ./src/img/gallery/4@2x.jpg 2x" alt="gallery-image">
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="item-today">
+                                        <h2>Today</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>128</p></div>
+                                            <div><i class="icon-comment"></i><p>31</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="item-date">
+                                        <h2>9-08-2016</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>67</p></div>
+                                            <div><i class="icon-comment"></i><p>22</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-upload">
+                                    <h2>Image upload</h2>
+                                    <p>11-04-2016</p>
+                                </div>
+                            </li>
+                            <li class="gallery-item">
+                                <div class="item-img">
+                                    <img src="./src/img/gallery/5.jpg" srcset="./src/img/gallery/5.jpg 1x, ./src/img/gallery/5@2x.jpg 2x" alt="gallery-image">
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="item-today">
+                                        <h2>Today</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>128</p></div>
+                                            <div><i class="icon-comment"></i><p>31</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="item-date">
+                                        <h2>9-08-2016</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>67</p></div>
+                                            <div><i class="icon-comment"></i><p>22</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-upload">
+                                    <h2>Image upload</h2>
+                                    <p>11-04-2016</p>
+                                </div>
+                            </li>
+                            <li class="gallery-item">
+                                <div class="item-img">
+                                    <img src="./src/img/gallery/6.jpg" srcset="./src/img/gallery/6.jpg 1x, ./src/img/gallery/6@2x.jpg 2x" alt="gallery-image">
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="item-today">
+                                        <h2>Today</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>128</p></div>
+                                            <div><i class="icon-comment"></i><p>31</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="item-date">
+                                        <h2>9-08-2016</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>67</p></div>
+                                            <div><i class="icon-comment"></i><p>22</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-upload">
+                                    <h2>Image upload</h2>
+                                    <p>11-04-2016</p>
+                                </div>
+                            </li>
+                            <li class="gallery-item">
+                                <div class="item-img">
+                                    <img src="./src/img/gallery/7.jpg" srcset="./src/img/gallery/7.jpg 1x, ./src/img/gallery/7@2x.jpg 2x" alt="gallery-image">
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="item-today">
+                                        <h2>Today</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>128</p></div>
+                                            <div><i class="icon-comment"></i><p>31</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="item-date">
+                                        <h2>9-08-2016</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>67</p></div>
+                                            <div><i class="icon-comment"></i><p>22</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-upload">
+                                    <h2>Image upload</h2>
+                                    <p>11-04-2016</p>
+                                </div>
+                            </li>
+                            <li class="gallery-item">
+                                <div class="item-img">
+                                    <img src="./src/img/gallery/8.jpg" srcset="./src/img/gallery/8.jpg 1x, ./src/img/gallery/8@2x.jpg 2x" alt="gallery-image">
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="item-today">
+                                        <h2>Today</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>128</p></div>
+                                            <div><i class="icon-comment"></i><p>31</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="item-date">
+                                        <h2>9-08-2016</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>67</p></div>
+                                            <div><i class="icon-comment"></i><p>22</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-upload">
+                                    <h2>Image upload</h2>
+                                    <p>11-04-2016</p>
+                                </div>
+                            </li>
+                            <li class="gallery-item">
+                                <div class="item-img">
+                                    <img src="./src/img/gallery/9.jpg" srcset="./src/img/gallery/9.jpg 1x, ./src/img/gallery/9@2x.jpg 2x" alt="gallery-image">
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="item-today">
+                                        <h2>Today</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>128</p></div>
+                                            <div><i class="icon-comment"></i><p>31</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="item-date">
+                                        <h2>9-08-2016</h2>
+                                        <div>
+                                            <div><i class="icon-heart"></i><p>67</p></div>
+                                            <div><i class="icon-comment"></i><p>22</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-upload">
+                                    <h2>Image upload</h2>
+                                    <p>11-04-2016</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-load" type="button">Load more</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="./src/js/index.js"></script>
+</html>
